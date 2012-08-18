@@ -1,0 +1,24 @@
+cache access to the API or mock calls (recording?)
+
+separate js files from libraries
+
+can I link ant to jshint?
+
+create a main that links to:
+  - schools
+  - badges
+  - users
+  - projects (courses)
+
+add error handling when get_JSON fails silently
+
+add a spinner for AJAX calls (loading...)
+
+
+
+Writeable API:
+One story could be modify your profile
+  - Authorisation
+  - Authentication
+  - GET profile (users) data
+  - PUT data
