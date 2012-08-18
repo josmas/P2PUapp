@@ -5,7 +5,8 @@
 An app to tease out the P2PU API (and learn phonegap).
 
 This an Android PhoneGap project (http://phonegap.com/).
-You can use Eclipse or the command line through ant.
+You can use Eclipse or the command line through ant to build the app.
+You need the Android SDK to work with this code.
 
 Getting the source:
  1. fork/clone this repo
@@ -15,27 +16,31 @@ Getting the source:
 More information about updating the project can be found at:
 http://developer.android.com/tools/projects/projects-cmdline.html
 
-From there on you can either import to eclipse or work with any editor/IDE of
-your choice.
+From there on you can either import to eclipse, or work with any 
+editor/IDE of your choice.
 
 From command line, after step 2, you can run:
  - ant debug (to build the project)
  - ant debug install (to install to your default device or emulator)
 
+From Eclipse simply right click the project name as choose: Run as Android
+application.
+
 All the HTML5 related files live in the assets/www folder.
 
-The app grabs data from the main P2PU API at:
+The app is intended to grab data from the main P2PU API at:
 https://api.p2pu.org/api/alpha/?format=json
 
-The API is quite reduced at the moment, and this app is a way for us to work out
-what else we need to do with it.
-
-The code points to http://api.localhost:8000/api/alpha/?format=jsonp&callback=?
+For development, the code points to 
+http://api.localhost:8000/api/alpha/?format=jsonp&callback=?
 which means that you will need a local copy of Lernanta.
 
 Lernanta can be found at: https://github.com/p2pu/lernanta 
 And more information about the API at:
 https://github.com/p2pu/lernanta/wiki/API-development-process
+
+The API functionality is quite reduced at the moment, and this app is a way 
+for us to work out what else we need to do with it.
 
 Help will be very welcome!
 
