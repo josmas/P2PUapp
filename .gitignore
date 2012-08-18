@@ -1,3 +1,4 @@
 *.swp
 bin/
 local.properties
+gen/R.java.d

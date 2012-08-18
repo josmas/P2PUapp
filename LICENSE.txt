@@ -1,0 +1,2 @@
+have to come up with a license; probably MPL or MIT but have to check how the
+dependencies might affect the licensing. Any help much appreciated!
