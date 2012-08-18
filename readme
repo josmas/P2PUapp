@@ -12,6 +12,9 @@ Getting the source:
  2. run '~/android-sdk/tools/android update project 
  --name P2PUapp --target 1 --path /path_to_your_clone/P2PUapp/'
 
+More information about updating the project can be found at:
+http://developer.android.com/tools/projects/projects-cmdline.html
+
 From there on you can either import to eclipse or work with any editor/IDE of
 your choice.
 
