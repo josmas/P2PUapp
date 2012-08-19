@@ -10,8 +10,6 @@ create a main that links to:
 
 add error handling when get_JSON fails silently
 
-add a spinner for AJAX calls (loading...)
-
 
 
 Writeable API:

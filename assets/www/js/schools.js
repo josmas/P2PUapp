@@ -1,6 +1,7 @@
 var serviceURL = "http://api.localhost:8000/api/alpha/school/";
 
-$('#mainPage').bind('pageinit', function(event) {
+$('#mainPage').live('pageshow', function(event) { 
+  $.mobile.showPageLoadingMsg(); 
   getSchoolsList();
 });
 
@@ -18,6 +19,7 @@ function getSchoolsList(){
         '</a></li>');
     });
     
+    $.mobile.hidePageLoadingMsg(); 
     $('#schoolsList').listview('refresh');
   });
 }
@@ -27,6 +29,7 @@ function linkToPage(pageId){
 }
 
 $('#schoolDetailsPage').live('pageshow', function(event) {
+  $.mobile.showPageLoadingMsg(); 
   var id = getParams()["id"];
   $.getJSON(serviceURL + id + '?format=jsonp&callback=?', showSchoolDetails);
 });
@@ -34,6 +37,7 @@ $('#schoolDetailsPage').live('pageshow', function(event) {
 function showSchoolDetails(data) {
   school = data;
   $('#description').html(school.description);
+  $.mobile.hidePageLoadingMsg(); 
 }
 
 function getParams() {
