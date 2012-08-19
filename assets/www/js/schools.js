@@ -12,7 +12,7 @@ function getSchoolsList(){
     schools = data.objects;
     $.each(schools, function(index, school) {
       $('#schoolsList').append(
-        '<li><a href="schooldetails.html?id=' + school.id + '">' +
+        '<li><a href="#" onclick="linkToPage(' + school.id + ');">' +
         '<h3>' + school.name + '<h3/>' +
         '<h4>' + school.short_name + '</h4>' +
         '</a></li>');
@@ -20,6 +20,10 @@ function getSchoolsList(){
     
     $('#schoolsList').listview('refresh');
   });
+}
+
+function linkToPage(pageId){
+  $.mobile.changePage( "schooldetails.html?id=" + pageId, { transition: "slideup"} );
 }
 
 $('#schoolDetailsPage').live('pageshow', function(event) {
