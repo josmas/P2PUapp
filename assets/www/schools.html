@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
   <head>
+    <!-- TODO: Do I need to load all the scripts again. how to yield? -->
     <title>P2PU app refresh</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no">
@@ -17,17 +18,16 @@
     <script type="text/javascript" src="js/libs/jquery.mobile-1.1.1.js"></script>
   </head>
   <body>
-    <div data-role="page" id="mainPage">
-
+    <div id="mainSchoolsPage" data-role="page">
       <div data-role="header">
-        <h1> Welcome to P2PU </h1>
+        <a href="index.html" data-icon="home">Home</a>
+        <h1> Schools </h1>
       </div>
-
       <div data-role="content">
-        <ul id="actionsList" data-role="listview" data-inset="true" data-filter="true">
-          <li><a href="schools.html" data-ajax="false"> Schools Information </a></li>
+        <ul id="schoolsList" data-role="listview" data-inset="true" data-filter="true">
         </ul>
       </div>      
     </div>
   </body>
+  <script type="text/javascript" src="js/schools.js"></script>
 </html>

@@ -1,6 +1,7 @@
 var serviceURL = "http://api.localhost:8000/api/alpha/school/";
 
-$('#mainPage').live('pageshow', function(event) { 
+$('#mainSchoolsPage').live('pageshow', function(event) { 
+        console.log('yeah');
   $.mobile.showPageLoadingMsg(); 
   getSchoolsList();
 });

@@ -1,13 +1,8 @@
-cache access to the API or mock calls (recording?)
-
+cache access to the API 
+cache access to the API or mock calls (recording?) for development
+detect on main page if wifi is on, and prompt if not.
 can I link ant to jshint?
-
-create a main that links to:
-  - schools
-  - badges
-  - users
-  - projects (courses)
-
+find a way to 'yield' content and have a main page to embed the others
 add error handling when get_JSON fails silently
 
 
