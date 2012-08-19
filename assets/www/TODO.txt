@@ -1,7 +1,5 @@
 cache access to the API or mock calls (recording?)
 
-separate js files from libraries
-
 can I link ant to jshint?
 
 create a main that links to:
